@@ -65,12 +65,14 @@ calcWide.addEventListener("click", (e) => {
     function applyChanges(e) {
       if (e.matches) {
         buttons.forEach((btn) => {
-          btn.style.padding = "7px";
+          btn.style.padding = "0px";
           btn.style.fontSize = "1rem";
         });
-        disp.style.fontSize = "2rem";
-        disp.style.height = "70px";
-        disp.style.padding = "7px 12px";
+        disp.style.fontSize = "1.5rem";
+        disp.style.height = "50px";
+        disp.style.padding = "6px 11px";
+         calculator.style.maxWidth = "600px";
+        second.style.maxWidth = "800px";
       }
     }
     mq.addEventListener("change", applyChanges);
@@ -304,3 +306,4 @@ second.addEventListener("click", (e) => {
     }
   }
 });
+
